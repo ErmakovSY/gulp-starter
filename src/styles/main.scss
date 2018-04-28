@@ -1,0 +1,18 @@
+// @import './../../node_modules/slick-carousel/slick/slick.scss';
+// @import '../../node_modules/hamburgers/dist/hamburgers.min';
+// @import '../../node_modules/animate.css/animate.min';
+// @import '../../node_modules/hover.css/css/hover-min';
+
+/* BASE */
+@import './base/_reset.scss';
+@import './base/_variables.scss';
+@import './base/_fonts.scss';
+@import './base/_mixins.scss';
+@import './base/_base.scss';
+@import './base/_animations.scss';
+
+/* SECTIONS */
+@import './sections/_header.scss';
+
+@import './sections/_footer.scss';
+@import './base/_modifyers.scss';
