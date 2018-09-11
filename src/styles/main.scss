@@ -2,6 +2,8 @@
 // @import '../../node_modules/hamburgers/dist/hamburgers.min';
 // @import '../../node_modules/animate.css/animate.min';
 // @import '../../node_modules/hover.css/css/hover-min';
+@import '../../node_modules/normalize-scss/fork-versions/default/normalize';
+
 
 /* BASE */
 @import './base/_reset.scss';
@@ -15,4 +17,6 @@
 @import './sections/_header.scss';
 
 @import './sections/_footer.scss';
+
+/* MODIFYERS */
 @import './base/_modifyers.scss';

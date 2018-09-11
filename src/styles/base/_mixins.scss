@@ -37,22 +37,6 @@
     }
 }
 
-@mixin button-bg-1($color) {
-    background: $color;
-    &:hover {
-        background: darken($color, 15%);
-    }
-}
-
-@mixin button-bg-2($color-1, $color-2) {
-    background: $color-1;
-    color: $color-2;
-    &:hover {
-        background: $color-2;
-        color: $color-1;
-    }
-}
-
 @mixin text-elipsis($width) {
     max-width: $width;
     white-space: nowrap;
