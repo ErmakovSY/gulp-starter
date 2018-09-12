@@ -32,7 +32,6 @@ const newer = require('gulp-newer'); /* Plugin look for new changes in files */
 const clean = require('gulp-clean'); /* Plugin delete some folder, content */
 
 /* Pathes */
-
 const build = './build';
 const src = './src';
 
@@ -113,17 +112,15 @@ gulp.task('build', ['html', 'css', 'js', 'image', 'fonts', 'video', 'htaccess'])
 
 /* Task for webserver */
 gulp.task('webserver', () => browserSync({
-  server: {
-    baseDir: './build'
-  },
+  server: {baseDir: './build'},
   tunnel: false,
   host: 'localhost',
   port: 9000,
-  logPrefix: 'server'
+  logPrefix: 'localhost:9000'
 }));
 
 /* Task Watch */
-gulp.task('watch', function () {
+gulp.task('watch', () => {
   watch(src + '/*.html', () => gulp.run('html'));
   watch(src + '/styles/**/*.scss', () => gulp.run('css'));
   watch(src + '/js/**/*.js', () => gulp.run('js'));
